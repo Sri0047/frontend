@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover effect</title>
+
+    <style>
+
+        .hover-button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+           
+          
+           /* cursor: pointer; */
+        }
+
+        .hover-button:hover {
+            background-color: #2ecc71;
+            width: 200px;
+
+            /* transform:scale(0.5); */
+
+            transition: 5s;
+
+/* 
+        }
+
+        div{
+            background-color: #3498db;
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+
+        }
+
+        div:hover{
+            background-color:green;
+            /* width:180px;
+            cursor: pointer;
+            transition: 0.5s; */
+            transform:scale(0.5);
+        } */
+    </style>
+
+</head>
+<body>
+    <button class="hover-button">Hover over me</button>
+  <br>
+  <br>
+  <br>
+    <div>
+     
+        
+        <!-- <script>
+            fetch("https://fakestoreapi.com/products/").then(res=>res.json().then(res=>{
+          document.write(`<h1>${res[0].title}</h1>`)
+            })
+            )
+        </script> -->
+        
+        
+    </div>
+<style>
+    .form{
+        background-color: #2ecc71;
+        height: 200px;
+        width: 200px;
+
+    }
+
+    .form:hover{
+        background-color: #d4159b;
+        box-shadow: 0px 0px 10px red;
+        transform: scale(0.5);
+        transition: 5s;
+    }
+
+    .linear-gradient{
+        height: 500px;
+        width: 500px;
+       background: linear-gradient( 90deg,red,blue,green);
+    }
+    body{
+        background-color: black;
+    }
+</style>
+    <div class="form">
+
+    </div>
+
+
+
+    <div class="linear-gradient">
+
+    </div>
+   
+</body>
+</html>

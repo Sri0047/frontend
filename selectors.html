@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external css  -->
+     <!-- <link rel="stylesheet" href="/hi.css"> -->
+    
+</head>
+<body>
+<!-- internal css -->
+    <style>
+        /* class name */
+       .a{
+        background-color: aquamarine;
+        height: 200px;
+        width: 200px;
+
+       }
+
+
+       .b{
+        background-color: rgb(44, 226, 16);
+        height: 200px;
+        width: 300px;
+       }
+
+       /* id */
+
+       #aa{
+        background-color: black;
+        height: 200px;
+        width: 300px;
+       }
+
+       /* tag */
+
+       body{
+        background-color: aqua;
+       }
+
+       /* grouping selectors */
+
+       .d,h1,p{
+
+        color: blueviolet;
+       }
+
+       /* parent child */
+      
+       section div h4 {
+        color: green;
+       }
+
+       section div p span{
+        color: green;
+       }
+       /* attribute selectors */
+
+       input[name=ui]{
+        background-color: blue;
+       }
+  
+
+       .margin{
+        background-color: rgb(177, 186, 186);
+        background-image: url(/image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px;
+        border: 10px dotted green;
+        /* border-left: 10px  green;
+        border-right: 10px solid rgb(226, 226, 8);
+        border-bottom: 10px solid yellowgreen;
+        border-top: 10px solid purple; */
+
+       }
+       .margin div{
+        height: 200px;
+        width: 900px;
+        /* background-color: antiquewhite; */
+       }
+
+       .ch1{
+       
+        background-color: red;
+   /* top  right  bottom  left */
+        margin: 700px 0px 0px 0px;
+        border-radius: 50%;
+
+        /* border-top-left-radius: 10px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+         */
+        /* margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 200px;
+        margin-bottom: 200px; */
+
+        /* padding: 50px 90px 200px 100px; */
+
+
+       }
+       .ch3{
+        
+        background-color: rgb(39, 14, 14);
+       }
+       .ch5{
+       
+        background-color: rgb(47, 224, 7);
+       }
+
+    </style>
+
+    <div class="a" id="aa" ></div>
+    <div  class="b"></div>
+    <div  class="c"></div>
+    <div  class="d">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nisi, quidem molestiae quae voluptates nostrum quasi perspiciatis modi quis explicabo aliquid consequatur adipisci libero, porro dolor soluta ducimus necessitatibus. Neque.
+    </div>
+    <h1>hello</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, reiciendis? Nemo necessitatibus distinctio at? Unde laboriosam reprehenderit magni neque minus. Nemo, modi eaque! Blanditiis officiis non inventore dignissimos hic omnis?</p>
+
+    <section>
+        <div>
+             <h4>hello</h4>
+             <p>Lorem ipsum dolor <span>span</span> sit amet consectetur adipisicing elit. Voluptatem quibusdam exercitationem esse voluptatum iure magni est repellat unde beatae aliquid ipsam perspiciatis enim, corporis ad dolorem officia provident veritatis rerum.</p>
+        </div>
+    </section>
+
+    <input type="text">
+    <input type="number" name="ui">
+    
+    <section class="margin">
+         <div class="ch1">
+            <p >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam facere quisquam, fugiat saepe, dignissimos repellat minima, dolor debitis architecto dolorum. Delectus saepe vel exercitationem tenetur sit, voluptatem dolores optio?
+            </p>
+         </div>
+         <div class="ch2"></div>
+         <div class="ch3"></div>
+         <div class="ch4"></div>
+         <div class="ch5"></div>
+    </section>
+ 
+</body>
+</html>

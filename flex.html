@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+</head>
+<body>
+    <style>
+ 
+    .parent{
+        background-color: black;
+        display: flex;
+        /* gap: 10px; */
+        align-items: center;
+        justify-content: space-around;
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        flex-wrap: wrap;
+        height: 500px;
+
+    }
+
+        .child{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+        }
+
+        .child1{
+            background-color: rgb(64, 255, 0);
+            width: 200px;
+            height: 200px;
+        }
+        .child2{
+            background-color: rgb(3, 36, 185);
+            width: 200px;
+            height: 200px;
+        }
+        .child3{
+            background-color: rgb(255, 64, 0);
+            width: 200px;
+            height: 200px;
+        }
+        .child4{
+            background-color: rgb(223, 9, 219);
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+    <section class="parent">
+        <div class="child"></div>
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+    </section>
+
+
+    <style>
+   nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+   }
+
+   nav img {
+    height: 100px;
+    width: 100px;
+   }
+
+   nav ul {
+    display: flex;
+   
+    gap: 50px;
+    flex-wrap: wrap;
+   
+   }
+   nav ul li {
+    list-style: none;
+
+   }
+   a{
+    text-decoration: none;
+   }
+
+   .card{
+    /* height: 300px; */
+    width: 250px;
+    background-image: url(/image.png);
+    background-repeat: no-repeat;
+
+    /* background-color: rgb(143, 142, 140); */
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+   }
+
+   .card img {
+    height: 200px;
+    width: 200px;
+   }
+
+   .card p{
+    color: rgb(132, 132, 132);
+   }
+
+   .card h5{
+    color: green;
+   }
+
+   .card h4{
+     
+    color: red;
+   }
+
+   .card h4 del {
+    color: rgb(114, 114, 114);
+   }
+   .card h4 span{
+    color: black;
+
+   }
+   h6{
+    color: purple;
+   }
+
+
+    </style>
+
+
+<nav>
+    <img src="https://tcftechnologys.com/assets/img/TCF_Logo%20(1).jpg" alt="">
+
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">help</a></li>
+        <li><a href="">cource</a></li>
+    </ul>
+
+</nav>
+
+<div class="card">
+  <img src="https://tcftechnologys.com/assets/img/TCF_Logo%20(1).jpg" alt="">
+   <h3>product name</h3>
+   <p>450 ml pack of 3</p>
+  <h5>4.2Source Code	Result
+    &#9734; (2345678987)</h5>
+  <h4> ₹ 344 <del> ₹889</del> <span>54% off</span></h4>
+  <h6>Buy 2 items,save 20% </h6>
+
+</div>
+   
+    <div style="border: 10px solid red; height: 300px; width: 300px; border-radius: 50%; ">
+        <div style=" background-color: black; border: 10px solid white;height: 200px; width: 200px; border-radius: 50%;  ">
+
+        </div>
+    </div>
+
+    @media screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+      }
+</body>
+</html>

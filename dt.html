@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- General Sibling Selector (~) -->
+
+     <style>
+        /* General sibling selector */
+        h2~p {
+            color: green;
+            font-weight: bold;
+        }
+
+    </style>
+
+    <div class="container">
+        <h2>General sibling selector 2</h2>
+        <p>This paragraph is after the h2 and will be affected.</p>
+        <p>This is another paragraph after the h2, also affected.</p>
+        <h2>Another Heading 2</h2>
+        <p>This paragraph comes after the second h2 and will also be affected.</p>
+        <p>This paragraph will not be affected because it doesn't come after an h2.</p>
+    </div>
+    <p>hello</p>
+</body>
+</html>

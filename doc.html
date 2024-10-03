@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--   Child Combinators -->
+
+    <style>
+        div>p {
+            color: orange;
+            /* Only targets paragraphs that are direct children of divs */
+        }
+    </style>
+    <div>
+        <p>hii</p>
+    </div>
+
+
+
+
+
+   
+
+
+
+
+
+
+    <!-- Adjacent Sibling Selector -->
+
+    <style>
+        /* Adjacent sibling selector */
+        h2+p {
+            color: blue;
+            font-style: italic;
+        }
+    </style>
+    <div class="container">
+        <h2>Adjacent sibling selector</h2>
+        <p>This paragraph is adjacent to the h2 and will be affected.</p>
+        <p>This paragraph will not be affected.</p>
+        <h2>Another Heading 2</h2>
+        <p>This paragraph is adjacent to the second h2 and will be affected.</p>
+        <p>This paragraph will not be affected either.</p>
+    </div>
+    <!-- Universal Selector (*) -->
+
+    <!-- next page -->
+
+
+    <!-- Group Selectors -->
+
+    <style>
+        /* Group selector: applies the same style to h1, h2, and p */
+        h1,
+        h2,
+        p {
+            color: darkblue;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <div>
+
+        <h1>Group selector</h1>
+        <h2>Group selector</h2>
+        <p>Group selector</p>
+
+    </div>
+
+
+    <!-- Intersection of Classes -->
+
+    <style>
+        /* Styling for all boxes */
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            padding-top: 40px;
+            margin: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for red boxes */
+        .red {
+            background-color: red;
+        }
+
+        /* Styling for blue boxes */
+        .blue {
+            background-color: blue;
+        }
+
+        /* Intersection of classes: red and large */
+        .red.large {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* Intersection of classes: blue and large */
+        .blue.large {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+    <div class="box red">I am a red box.</div>
+    <div class="box blue">I am a blue box.</div>
+    <div class="box red large">I am a large red box.</div>
+    <div class="box blue large">I am a large blue box.</div>
+
+
+
+    <!-- Descendant Selector (Space ) -->
+    <style>
+        /* Descendant selector: styles all p elements inside .container */
+        .container p {
+            color: green;
+            font-size: 18px;
+        }
+    </style>
+
+    <div class="container">
+        <h2>Container Heading</h2>
+        <p>This is a paragraph inside the container.</p>
+        <div class="nested">
+            <p>This is a nested paragraph inside another div.</p>
+        </div>
+    </div>
+
+ <!-- Combined Pseudo-Class Selectors -->
+
+    <style>
+        /* ul li:first-child {
+            font-weight: bold;
+            color: blue;
+        } */
+
+        /* Target odd-numbered list items when hovered */
+        ul li:nth-child(3) {
+            background-color: yellow;
+        }
+    </style>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+        <li>Fifth item</li>
+    </ul>
+
+    <!-- <ul>
+        <li>first-child</li>
+        <li>second-child</li>
+    </ul> -->
+
+
+</body>
+
+</html>
