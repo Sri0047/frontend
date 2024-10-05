@@ -6,14 +6,82 @@
   <title>Keyframe Animation Example</title>
   <style>
 
-    .box {
+    /* .box {
 
       width: 100px;
       height: 100px;
       background-color: coral;
       position: relative;
-      animation: moveRight 7s infinite; /* Name of animation, duration, and infinite loop */
+      animation: moveRight 1s infinite; /* Name of animation, duration, and infinite loop */
+    /* } */ 
+
+    .model {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: rgb(80, 100, 255);
+      animation: movebottom 10s infinite
     }
+
+    @keyframes movebottom {
+
+
+      0%{
+       background-color: #c60a0a;
+       box-shadow: 0px 0px 10px black;
+       left: 0;
+       padding: 100px;
+       top: 100px;
+      }
+      10%{
+        background-color: #910ac6cf;
+       box-shadow: 0px 0px 10px black;
+       left: 1;
+       padding: 50px;
+       top: 300px;
+      }
+
+      30%{
+        background-color: #07d4b9;
+       box-shadow: 0px 0px 10px black;
+       right: 1;
+       left: 0;
+       padding: 100px;
+       top: 600px;
+      }
+      40%{
+        background-color: #f3c708;
+       box-shadow: 0px 0px 10px black;
+       right: 0;
+       left: 1;
+       padding: 50px;
+      }
+      60%{
+        background-color: #e406bf;
+       box-shadow: 0px 0px 10px black;
+       right: 1;
+       left: 0;
+       height: 20px;
+       width: 30px;
+
+      }
+      80%{
+        background-color: #1ac60a;
+       box-shadow: 0px 0px 10px black;
+       left: 390px;
+      }
+      100%{
+        background-color: #c60a0a;
+       box-shadow: 0px 0px 10px black;
+       left: 0;
+      }
+
+
+    }
+
+
+
+
 
 
     
@@ -21,8 +89,7 @@
     @keyframes moveRight {
 
       0% {
-        left: 0; /* Start position */
-        background-color: black;
+        left: 0; /* Start position */      
         box-shadow: 0px 0px 10px green;
       }
       50% {
@@ -42,5 +109,10 @@
 </head>
 <body>
   <div class="box"></div>
+
+
+  <div class="model"></div>
+
+
 </body>
 </html>
