@@ -1,0 +1,72 @@
+body{
+    background-color:blanchedalmond;
+}
+ 
+.parent div img
+{
+    margin-left: 100;
+    margin-top: 100;
+    width: 150px;
+    height: 150px;
+    
+
+}
+
+
+.child1{
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    padding-bottom:100px;
+    margin-top: -200
+
+}
+ .child1{
+    display: flex;
+    gap: 40px;
+ }
+    
+
+.post
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    padding-bottom:100px;
+    margin-top: -200;
+    
+
+}
+
+.followers{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    padding-bottom:100px;
+    margin-top: -200;
+    
+}
+
+.following
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    padding-bottom:100px;
+    margin-top: -200;
+    
+}
+.child2
+{
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+.child3
+{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 500px;
+}
