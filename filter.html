@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            height: 600px;
+            width: 700px;
+
+            /* filter: grayscale(100%);  black and white    */ 
+
+            /* filter: blur(100px);   blur image  */
+
+            /* filter: brightness(10%); brightness */
+
+            /* filter: invert(90%);  inverts the image colors, */
+
+            /* filter: opacity(10%);  image opacity */
+
+            /* filter: hue-rotate(190deg);  shifting the color spectrum  */
+
+            /* filter: saturate(250%);   Values above 100% increase saturation, and values below 100% desaturate the image */
+
+            /* filter: sepia(10%) transparent 100%;   */
+
+            /* filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)); */
+            animation: colorchange 3s infinite;
+        }
+
+        @keyframes colorchange {
+            0%{
+                filter: grayscale(100%);
+            }
+            10%{
+                filter: grayscale(80%);
+            }
+            20%{
+                filter: grayscale(70%);
+            }
+
+            40%{
+                filter: grayscale(40%);
+            }
+            100%{
+                filter: grayscale(0%);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <img src="./pexels-pixabay-209339.jpg"  alt="">
+</body>
+</html>
+
+<!-- 
+In CSS, image filters are applied using the filter property. Filters allow you to apply various visual effects to images, such as blurring, changing brightness, contrast, saturation, and more. Here are the most commonly used filter functions:
+
+blur()
+
+Applies a blur effect to the image.
+Syntax: blur(radius)
+Example: filter: blur(5px);
+The higher the radius value, the more blurred the image becomes.
+brightness()
+
+Adjusts the brightness of the image.
+Syntax: brightness(amount)
+Example: filter: brightness(150%);
+Values greater than 100% make the image brighter, and values below 100% darken the image.
+contrast()
+
+Adjusts the contrast of the image.
+Syntax: contrast(amount)
+Example: filter: contrast(200%);
+Values above 100% increase the contrast, and values below 100% decrease it.
+grayscale()
+
+Converts the image to grayscale.
+Syntax: grayscale(amount)
+Example: filter: grayscale(100%);
+A value of 100% makes the image completely grayscale, while 0% leaves it unchanged.
+invert()
+
+Inverts the colors of the image.
+Syntax: invert(amount)
+Example: filter: invert(100%);
+A value of 100% completely inverts the image colors, and 0% keeps it the same.
+opacity()
+
+Adjusts the transparency of the image.
+Syntax: opacity(amount)
+Example: filter: opacity(50%);
+Values from 0% (fully transparent) to 100% (fully opaque).
+saturate()
+
+Increases or decreases the color saturation.
+Syntax: saturate(amount)
+Example: filter: saturate(150%);
+Values above 100% increase saturation, and values below 100% desaturate the image.
+sepia()
+
+Applies a sepia tone effect, giving the image a warm brownish tone.
+Syntax: sepia(amount)
+Example: filter: sepia(100%);
+
+ A value of 100% applies full sepia effect.
+
+hue-rotate()
+
+Rotates the hue of the colors in the image.
+Syntax: hue-rotate(angle)
+Example: filter: hue-rotate(90deg);
+The value is in degrees (0deg to 360deg), shifting the color spectrum.
+
+drop-shadow()
+
+Adds a shadow effect to the image.
+Syntax: drop-shadow(offset-x offset-y blur-radius color)
+Example: filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); -->

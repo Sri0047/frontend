@@ -7,16 +7,74 @@
 <body>
 
     <style>
-        div{
-           height: 300px; 
-           width: 200px;
+        .con{
+           position: absolute;
+           top: 0;
+           height: 600px; 
+           width: 400px;
            background-color: green;
           
         }
+
+        .box{
+            position: relative;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 700px; 
+            width: 500px;
+            background-color: aqua;
+        }
     </style>
 
-    <div>
+    <!-- <div class="con">
+    </div>
+    <div class="box" >
+    </div> -->
+
+    <div style="height: 500px; width: 200px; position: relative;">
+
+        <div style="height: 250px; width: 200px ; background-color: red; border-radius: 10px;">
+
+        </div>
+
+
+        <div style="height: 250px; width: 200px ; background-color: rgb(235, 220, 220);">
+
+        </div>
 
     </div>
+
+    <img src="/image-removebg-preview.png" style="position: absolute;  margin-top: -470px; left: 150px;" alt="" height="80px" width="100px">
+
+    <style>
+                    .parent {
+                        height: 300px;
+                        width: 400px;
+                        position: relative;
+                        z-index: 0;
+                        background-color: brown;
+                     }
+
+                        .child {
+                        position: absolute;
+                        z-index: 1;
+                        height: 300px;
+                        width: 200px;
+                        margin-top: -200px;
+                        background-color: black;
+                        }
+    </style>
+
+    <div class="parent">
+
+    </div>
+
+    <div class="child">
+
+    </div>
+
+
 </body>
 </html>
