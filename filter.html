@@ -5,32 +5,43 @@
     <title>Document</title>
 
     <style>
+        body{
+            background-color: blue;
+        }
         img{
             height: 600px;
             width: 700px;
 
-            /* filter: grayscale(100%);  black and white    */ 
+            /* filter: grayscale(90%); */
 
-            /* filter: blur(100px);   blur image  */
+            /* filter: grayscale(50%);  black and white     */
 
-            /* filter: brightness(10%); brightness */
+            /* filter: blur(80px);   blur image  */
+
+            /* filter: brightness(90%); brightness */
 
             /* filter: invert(90%);  inverts the image colors, */
 
             /* filter: opacity(10%);  image opacity */
 
-            /* filter: hue-rotate(190deg);  shifting the color spectrum  */
+            /* filter: hue-rotate(100deg);  shifting the color spectrum  */
 
-            /* filter: saturate(250%);   Values above 100% increase saturation, and values below 100% desaturate the image */
+            /* filter: saturate(550%);   Values above 100% increase saturation, and values below 100% desaturate the image */
 
-            /* filter: sepia(10%) transparent 100%;   */
+            /* filter: sepia(80%) ;   */
 
             /* filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)); */
-            animation: colorchange 3s infinite;
+            /* animation: colorchange 3s infinite; */
+        }
+
+        img:hover{
+            filter: grayscale(90%);
+            border-radius: 100px;
         }
 
         @keyframes colorchange {
             0%{
+
                 filter: grayscale(100%);
             }
             10%{
@@ -47,12 +58,16 @@
                 filter: grayscale(0%);
             }
         }
+        h1{
+            text-shadow: 0px 0px 10px green;
+        }
 
     </style>
 
 </head>
 <body>
     <img src="./pexels-pixabay-209339.jpg"  alt="">
+    <h1>hello</h1>
 </body>
 </html>
 
